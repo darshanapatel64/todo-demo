@@ -1,0 +1,17 @@
+@model TodoApp.Models.Todo
+
+<h2>Edit Todo</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <input asp-for="Title" class="form-control" />
+
+    <br />
+    <label>
+        <input asp-for="IsCompleted" /> Completed
+    </label>
+
+    <br /><br />
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>

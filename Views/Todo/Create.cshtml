@@ -1,0 +1,11 @@
+@model TodoApp.Models.Todo
+
+<h2>Add Todo</h2>
+
+<form asp-action="Create" method="post">
+    <input asp-for="Title" class="form-control" placeholder="Enter task" />
+    <span asp-validation-for="Title"></span>
+
+    <br />
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
